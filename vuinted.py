@@ -10,7 +10,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_option
 
 os.system("cls")
 link = input("[*] Lien de votre article a boost : ")
-vu = input("[*] Nombre de vu a ajouté : ")
+vu = int(input("[*] Nombre de vu a ajouté : "))
 
 for x in range(vu):
 	driver.get(link)
